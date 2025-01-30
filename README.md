@@ -14,10 +14,10 @@ The **server code** is deployed on [Render](https://render.com), while the **cli
 
 ## Tech Stack
 
-- **Frontend**: React.js
+- **Frontend**: React.js, Redux
 - **Backend**: Node.js, Express
 - **Database**: MongoDB
-- **Deployment**: 
+- **Deployment**:
   - **Server**: Deployed on [Render](https://render.com)
   - **Client**: Hosted on GitHub Pages
 
@@ -49,7 +49,7 @@ cd task-app
 
     ```env
     MONGODB_URI=your_mongodb_connection_string
-    PORT=5000
+    PORT=4000
     ```
 
 4. Start the server:
@@ -58,7 +58,7 @@ cd task-app
     npm start
     ```
 
-The backend will now be running on [http://localhost:5000](http://localhost:5000).
+The backend will now be running on [http://localhost:4000](http://localhost:4000).
 
 ---
 
