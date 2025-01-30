@@ -1,8 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector} from "react-redux";
 import { login, logout } from "../redux/actions/authAction";
-import LoginForm from "./LoginForm";
-import SignUpForm from "./SignUpForm";
 import TodoList from "./TodoList";
 import AddTodo from "./AddTodo";
 
@@ -19,12 +17,6 @@ const MainPage = () => {
     if(!loggedIn)
     dispatch(login(authToken.username, authToken.password))
   }
-  const authItems = (
-    <div>
-        <SignUpForm />
-        <LoginForm />
-    </div>
-  )
    const todoItems = (
      <div>
        <TodoList />
